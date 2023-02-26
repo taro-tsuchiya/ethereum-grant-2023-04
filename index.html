@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>Measuring and Strengthening the Security of DeFi</title>
+    <meta name="description"
+          content="Ethereum grant application. Machine Learning on a network level to find anomalies and enable early warning systems for issues that start occurring."/>
+    <meta name="keywords" content="blockchain, security, machine learning"/>
+    <link rel="stylesheet" href="https://latex.now.sh/style.css">
+</head>
+
+<body>
+<h1>Measuring and Strengthening the Security of DeFi</h1>
+<p class="author">
+    <b><i>In Alphabetical Order</i></b> <br/>
+    Arthur Gervais (arthur@gervais.cc) <br/>
+    Dawn Song (dawnsong@gmail.com) <br/>
+    Jens Ernstberger (jens.ernstberger@tum.de) <br/>
+    Kaihua Qin (kaihua.qin@imperial.ac.uk) <br/>
+    Liyi Zhou (liyi.zhou@imperial.ac.uk) <br/>
+    Stefanos Chaliasos (s.chaliasos21@imperial.ac.uk) <br/>
+    <b><i>Last Update: February 26, 2023</b></i>
+</p>
+
+<div class="abstract">
+    <h2>Project Abstract</h2>
+    <p style="text-align:left;">
+        In this grant proposal, we aim to build on our existing work and contribute to the security of the decentralized
+        finance (DeFi) ecosystem. Leveraging our previous work (<a href="https://arxiv.org/abs/2208.13035">https://arxiv.org/abs/2208.13035</a>),
+        we will expand our dataset and refine the reference framework to systematically categorize and evaluate DeFi
+        incidents and potential defenses. Our project will focus on investigating bytecode detection, rescue time frame,
+        emergency pause mechanisms, and other novel defense mechanisms based on our expanded dataset.
+    </p><br/>
+
+    <p style="text-align:left;">
+        This project makes significant contributions to the Ethereum and DeFi ecosystem by enhancing the security of
+        DeFi protocols. With the rapid growth and increasing complexity of DeFi protocols, security has become a
+        critical issue. The refined reference framework and novel defense mechanisms developed in this project will
+        enable the development of more secure and robust DeFi protocols. By making our dataset open-source and
+        accessible to the wider community, we aim to promote further research in this area. We intend to present the
+        results and findings through talks and visualizations to make them accessible to a wider audience. Ultimately,
+        this proposal will help to increase confidence in the DeFi ecosystem and provide a more secure platform for
+        users to participate in DeFi activities.
+    </p>
+</div>
+
+<main>
+    <article>
+        <h2 id="objectives">Objectives</h2>
+
+        <h5>
+            What are you hoping to accomplish with this grant?
+        </h5>
+
+        <p>The grant proposal aims to achieve the following objectives:</p>
+
+        <ul>
+            <li>
+                We will expand the DeFi incident dataset to cover the period up to 2023, in order to include a more
+                diverse range of incidents, academic papers, and security audit reports.
+            </li>
+            <li>
+                Develop a refined reference framework to systematically categorize and evaluate DeFi incidents and
+                potential defenses.
+            </li>
+            <li>
+                Further explore bytecode detection, rescue time frame and emergency pause mechanisms, and other novel
+                defense mechanisms based on the expanded dataset. Measure the effectiveness of the proposed defense
+                mechanisms and identify any gaps that need further research.
+            </li>
+            <li>
+                Visualize and disseminate the results and dataset to the broader academic and practitioner communities
+                to facilitate further research and the development of more secure and robust DeFi protocols.
+            </li>
+        </ul>
+
+        <h5>
+            How do you define and measure success for this project?
+        </h5>
+
+        <p>We define success for this project as:</p>
+
+        <ul>
+            <li>
+                The expanded dataset and reference framework should provide a more comprehensive understanding of the
+                security landscape of the DeFi ecosystem, including the most common types of DeFi incidents and
+                potential defense mechanisms.
+            </li>
+            <li>
+                The proposed defense mechanisms should demonstrate measurable improvements in security against known and
+                unknown DeFi incidents.
+            </li>
+            <li>
+                The results and dataset should be widely disseminated and adopted by the academic and practitioner
+                communities, leading to the development of more secure and robust DeFi protocols.
+            </li>
+        </ul>
+
+
+        <h2 id="services">Outcomes</h2>
+
+        <h5>How does this project benefit the greater Ethereum ecosystem?</h5>
+
+        <p style="text-align:left;">
+            This project's outcomes will provide a better understanding of the security landscape of the DeFi ecosystem,
+            identify the most common types of DeFi incidents, evaluate potential defense mechanisms, and develop a
+            refined reference framework and novel defense mechanisms. These outcomes will enable the development of more
+            secure and robust DeFi protocols and increase confidence in the DeFi ecosystem.
+        </p>
+
+        <p style="text-align:left;">
+            Additionally, the open-source dataset and visualization tools will make it easier for future researchers to
+            extend the dataset and conduct further research in the area.
+        </p>
+
+        <h2 id="scope">Grant Scope</h2>
+
+        <h5>What are you going to research?</h5>
+
+        <p style="text-align:left;">
+            This grant proposal aims to expand the dataset of DeFi incidents on Ethereum and Binance Smart Chain (BSC)
+            to 2023, including a wider range of incidents, academic papers, and security audit reports. The project will
+            investigate potential defense mechanisms, such as bytecode detection, rescue time frame and emergency pause
+            mechanisms, and other novel defense mechanisms based on the expanded dataset.
+        </p>
+
+        <h5>What is the expected output?</h5>
+
+        <p style="text-align:left;">
+            The expected output of the project is a refined reference framework that systematically categorizes and
+            evaluates DeFi incidents and potential defenses on all DeFi enabled blockchains. The research will also
+            provide a more comprehensive understanding of the security landscape of the DeFi ecosystem on both chains,
+            and the results will enable the development of more robust and secure DeFi protocols on Ethereum and Binance
+            Smart Chain.
+        </p>
+
+        <p style="text-align:left;">
+            The output of this grant will also be an open-source dataset, visualization tools. We will also publish
+            research papers, present our findings at conferences, and give talks to advertise the results and make them
+            more accessible to the wider community.
+        </p>
+
+
+        <h2 id="scope">Project Team</h2>
+
+        <h5>How many people are working on this project? Please list their names and roles for the project as well as
+            how many hours per month will each person work on this project?</h5>
+
+        <p style="text-align:left;">
+            The project team consists of six members, including two professors and four PhD students. Arthur Gervais, Associate Professor at UCL, and Dawn Song, Professor at UC Berkeley, will serve as the principal investigators and will be responsible for the overall direction and management of the project. Each of them will work 5 hours per week on the project.
+        </p>
+
+        <p style="text-align:left;">
+            Liyi Zhou, one of the PhD students, will lead the data collection and overall analysis, and will work approximately 20 hours per week on the project. Jens Ernstberger, Kaihua Qin, and Stefanos Chaliasos, the other three PhD students, will support the data collection and analysis, and will each contribute 10 hours per week to the project.
+    </p>
+
+        <p style="text-align:left;">
+            Overall, the team will dedicate at least 60 hours per week to this project. With the team's combined expertise and experience, they will work collaboratively to achieve the goals outlined in the grant proposal.
+        </p>
+
+
+        <h2 id="scope">Background</h2>
+
+        <h5>
+            Give us a bit of info and include relevant links, if available! Please provide other projects or research papers (ideally public and/or open source), engagements or other types of proof that your team has the necessary experience to undertake the project you are applying for.
+        </h5>
+
+        <p style="text-align:left;">
+        The project team has extensive experience in the field of blockchain and security research:
+        </p>
+
+        <ul>
+            <li>
+                Arthur Gervais is an Associate Professor at University College London (UCL) and a leading expert in the field of blockchain security. He has published numerous papers on the security and privacy of blockchain systems, including <a href="https://eprint.iacr.org/2016/555">On the security and performance of proof of work blockchains</a>, a <a href="https://www.mlsec.org/topnotch/sec_top100.html">top-100 information security paper of all time</a>.
+            </li>
+            <li>
+                Dawn Song is a Professor at the University of California, Berkeley, and a renowned expert in computer security and privacy. She has published over 100 research papers on various topics, including blockchain and security, and has won numerous awards for her contributions to the field. One of her recent projects is the Oasis Network, a privacy-enabled blockchain platform.
+            </li>
+            <li>
+                Jens Ernstberger, Kaihua Qin, Liyi Zhou, and Stefanos Chaliasos are PhD students working with both Dawn Song and Arthur Gervais. They have extensive experience in blockchain security, programming language research, cryptography, and privacy. In total, they have published more than 20 strong papers during their PhDs. For more details, please refer to their Google Scholar profiles below:
+                <ul>
+                    <li><a href="https://scholar.google.com/citations?user=9B8qrkgAAAAJ">Jens' Google Scholar</a></li>
+                    <li><a href="https://scholar.google.com/citations?user=-NPCrhcAAAAJ">Kaihua's Google Scholar</a></li>
+                    <li><a href="https://scholar.google.com/citations?user=xEXQBfMAAAAJ">Liyi's Google Scholar</a></li>
+                    <li><a href="https://scholar.google.com/citations?user=ZuBDDpIAAAAJ">Stefanos's Google Scholar</a></li>
+
+                </ul>
+            </li>
+        </ul>
+
+        <h5>Any links for us to review? E.g. research papers, blog posts, etc.</h5>
+
+        <p style="text-align:left;">
+        The most relevant paper to this grant proposal is our previously published paper on DeFi attacks (<a href="https://arxiv.org/abs/2208.13035">https://arxiv.org/abs/2208.13035</a>), which will appear in the IEEE Security and Privacy 2023 (SSP'23), as well as at the Stanford Blockchain Conference (SBC).
+        </p>
+
+        <p style="text-align:left;">
+        In addition, the project team has also worked on various open-source and educational projects related to blockchain and security, including:
+        <ul>
+            <li><a href="https://defi-learning.org/">Massive Open Online Course on Decentralized Finance</a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLS01nW3RtgoqeqHqOZ7NYdPR9CJRGZxf7">Podcast Fireside Chat with DeFi leaders</a></li>
+            <li><a href="https://github.com/arthurgervais/Bitcoin-Simulator">Blockchain Network Simulator</a></li>
+            <li><a href="http://www.blockchainworkbench.com">Blockchain Workbench, a solidity learning platform</a></li>
+        </ul>
+        </p>
+
+
+        <h2 id="scope">Methodology</h2>
+
+        <h5>How do you plan to achieve your research objectives?</h5>
+
+        <p style="text-align:left;">
+        To achieve our research objectives, we plan to use a combination of qualitative and quantitative research methods. The initial phase of the project will involve an extensive review of existing literature on DeFi incidents, including academic papers, security audit reports, and other relevant sources. We will use this review to develop a comprehensive reference framework for DeFi incidents and potential defenses.
+        </p>
+
+        <p style="text-align:left;">
+        We will then expand our dataset of DeFi incidents to include a wider range of incidents, academic papers, and security audit reports by at least six months. We will use this expanded dataset to investigate advanced byte code detection, rescue time frame and emergency pause mechanisms, and other novel defense mechanisms.
+        </p>
+
+        <p style="text-align:left;">
+        To measure the effectiveness of our defense mechanisms, we will conduct experiments to simulate attacks on DeFi protocols using our expanded dataset. We will use this data to evaluate the effectiveness of our proposed defense mechanisms and to identify areas for improvement.
+        </p>
+
+        <p style="text-align:left;">
+        Finally, we plan to make our dataset open-source and more accessible to the wider community by giving talks and advertising our results. We intend to visualize everything beautifully so that future research can easily extend our dataset.
+        </p>
+
+        <h2 id="scope">Timeline</h2>
+
+        <h5>
+            Please include a brief explanation on the milestones/roadmap, along with expected deliverables. Also
+                outline how the funds will be used for the research project and or members of the team.
+        </h5>
+
+        <p style="text-align:left;">
+        The proposed project will be completed in 12 months, and will be divided into four phases: data collection and cleaning, reference framework and taxonomy, defense mechanism investigation, and dissemination. The following table outlines the milestones and expected deliverables for each phase.
+        </p>
+
+        <table>
+            <tr>
+                <th>Phase</th>
+                <th>Milestones</th>
+                <th>Expected Deliverables</th>
+            </tr>
+            <tr>
+                <td>Data Collection and Cleaning</td>
+                <td>
+                    <ul>
+                        <li>Collect and clean new DeFi incidents and security audit reports from April 30, 2022, to April 30, 2023 (<b>subject to change</b>), on Ethereum and Binance Smart Chain</li>
+                        <li>Collect and clean additional academic papers on DeFi security</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>A comprehensive dataset of DeFi incidents, security audit reports, and academic papers</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Reference Framework and Taxonomy</td>
+                <td>
+                    <ul>
+                        <li>Develop and refine the DeFi reference framework</li>
+                        <li>Systematically categorize and evaluate DeFi incidents and potential defenses</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>A refined reference framework for categorizing and evaluating DeFi incidents and defenses</li>
+                        <li>A comprehensive taxonomy of DeFi incidents and defenses</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Defense Mechanism Investigation</td>
+                <td>
+                    <ul>
+                        <li>Investigate novel defense mechanisms, including byte code detection, rescue time frame and emergency pause mechanisms</li>
+                        <li>Evaluate defense mechanisms against existing incidents and attacks</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>A set of novel defense mechanisms to enhance DeFi security</li>
+                        <li>An evaluation of the effectiveness of the defense mechanisms</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Dissemination</td>
+                <td>
+                    <ul>
+                        <li>Present findings at relevant academic conferences and workshops</li>
+                        <li>Open-source the dataset and code for the reference framework and defense mechanisms</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>A set of academic publications presenting the project's findings</li>
+                        <li>An open-sourced dataset and code for the reference framework and defense mechanisms</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+
+
+
+        <h2 id="scope">Budget</h2>
+
+        <h5>
+            Requested grant amount and how this will be used. Please provide an requested amount and outline of how the grant will be used. A detailed budget proposal would be helpful and some item you could include are: Principle Researchers Costs, Other Staff Costs,
+            Hardware Costs, Software Costs, Data Collection Costs, Indirect Costs
+        </h5>
+
+        The proposed grant will cover the cost of salaries, running archive nodes for data analysis and travel expenses for the research team. The following table outlines the expected budget for the project.
+
+        <table>
+            <thead>
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Rate Per Hour</th>
+                <th>Number of Hours</th>
+                <th>Total Cost</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>PhD Student Salary</td>
+                <td>4</td>
+                <td>$10</td>
+                <td>80/week</td>
+                <td>$41,600</td>
+            </tr>
+            <tr>
+                <td>Equipment and Software (database, archive nodes, and servers)</td>
+                <td>12 months</td>
+                <td>$1,000/month</td>
+                <td></td>
+                <td>$12,000</td>
+            </tr>
+            <tr>
+                <td>Travel and Conference Expenses</td>
+                <td>At least 5 talks</td>
+                <td></td>
+                <td></td>
+                <td>$10,000</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>$63,600</td>
+            </tr>
+            </tbody>
+        </table>
+
+    </article>
+</main>
+
+</body>
+
+<hr>
+
+<footer>
+    <p>Made using <a href="https://latex.vercel.app">https://latex.vercel.app</a> &#10084; &#10084;</p>
+</footer>
+
+</html>
